@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-black text-white relative font-sans h-screen overflow-x-hidden;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Custom hover effects */
+.nav-link:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
